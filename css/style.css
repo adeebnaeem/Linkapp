@@ -1,0 +1,577 @@
+@import url("https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Questrial&display=swap");
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0 !important;
+    padding: 0 !important;
+    scroll-behavior: smooth !important;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    padding-left: 0;
+}
+
+button {
+    border: none;
+    outline: none;
+}
+
+.navbar {
+    padding: 18px 65px !important;
+}
+
+.active {
+    color: #FC4E1A !important;
+}
+
+.activenav {
+    color: #170df2 !important;
+}
+
+.navbar .navbox {
+    width: 33px;
+    height: 33px;
+    background-color: #170df2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navbar .navbox .innernav-box {
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    background-color: #c7c7c7;
+}
+
+.navbar .navbar-brand {
+    font-size: 30px;
+    color: inherit;
+    cursor: pointer;
+    text-decoration: none;
+    font-weight: bold;
+    font-family: syne, sans-serif;
+}
+
+.navbar .collapse .navbar-nav li {
+    padding: 0 10px;
+}
+
+.navbar .collapse .navbar-nav li a {
+    color: black;
+    text-decoration: none;
+    font-size: 16px;
+    font-family: "Questrial", sans-serif;
+}
+
+
+/* Small NAv */
+
+.hamburger-Icon.navbar-toggler {
+    border: none;
+    outline: none;
+    box-shadow: none;
+}
+
+.hamburger-Icon {
+    display: flex;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    justify-content: center;
+    cursor: pointer;
+    position: relative;
+    transition: all 0.2s ease 0s;
+    z-index: 1000;
+}
+
+.hamburger-Icon span {
+    height: 3px;
+    width: 22px;
+    background: rgb(23, 13, 242);
+    margin: 2px 0;
+    transition: all 0.2s ease 0s;
+}
+
+.hamburger-Icon.triggered {
+    width: fit-content;
+    transform: translateX(0px);
+}
+
+.hamburger-Icon.triggered span:nth-child(1) {
+    transition: all 0.2s ease 0s;
+    transform: rotate(-45deg) translate(-5.5px, 4px);
+}
+
+.hamburger-Icon.triggered span:nth-child(2) {
+    opacity: 0;
+    transition: all 0.2s ease 0s;
+}
+
+.hamburger-Icon.triggered span:nth-child(3) {
+    transition: all 0.2s ease 0s;
+    transform: rotate(45deg) translate(-6px, -4px);
+}
+
+.smallMainNav.menuOpen {
+    opacity: 1 !important;
+    visibility: visible;
+    transition: all 0.35s;
+}
+
+.smallMainNav-overlay.show {
+    opacity: 1;
+    visibility: visible;
+    transition: 0.35s all;
+}
+
+.smallMainNav-overlay {
+    opacity: 0;
+    visibility: hidden;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 45vw;
+    height: 100vh;
+    z-index: 998;
+    background-color: rgba(0, 0, 0, 0.6);
+    transition: 0.35s all;
+}
+
+.smallMainNav {
+    opacity: 0;
+    visibility: hidden;
+    width: 80vw;
+    height: 100vh;
+    position: fixed;
+    top: 0px;
+    right: 0;
+    transition: all 0.4s;
+    z-index: 999;
+    transform: translateX(0%);
+    background-color: #fff;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.35s;
+}
+
+.smallMainNav.menuOpen .mainNavLinks a {
+    transform: translateY(0px);
+    transition: all 0.3s;
+}
+
+.smallMainNav .mainNavLinks a {
+    transform: translateY(-20px);
+    text-align: end;
+    color: #000;
+    line-height: 50px;
+    font-size: 16px;
+    font-family: "Questrial", sans-serif;
+    text-decoration: none;
+    transition: all 0.3s;
+    display: block;
+}
+
+.navbar-toggler:focus {
+    box-shadow: none !important;
+}
+
+.smallMainNav ul {
+    list-style: none;
+}
+
+
+/* Small NAv */
+
+
+/* hero section from start here */
+
+.hero-sect .hero-sect-one h1 {
+    font-weight: bold;
+    font-size: 50px;
+    line-height: 1.4em;
+    font-family: syne, sans-serif;
+    color: black;
+}
+
+.hero-sect .row {
+    padding-bottom: 140px;
+}
+
+.hero-sect .secd-col .circle {
+    left: 82px;
+    top: -40px;
+    width: 221px;
+    height: 221px;
+}
+
+.hero-sect .secd-col .star {
+    right: 0;
+    top: 14px;
+    width: 156px;
+    height: 156px;
+}
+
+.hero-sect .secd-col .radii {
+    left: 12px;
+    bottom: -84px;
+    height: 272px;
+    transform: rotate(7.0876deg);
+}
+
+.hero-sect .secd-col .rect {
+    right: -50px;
+    bottom: -55px;
+    width: 329px;
+    height: 126px;
+    transform: rotate(280deg);
+}
+
+.hero-sect .secd-col {
+    width: 545px;
+    object-fit: cover;
+    z-index: 1;
+}
+
+.hero-sect .secd-col .phone {
+    z-index: 2;
+    position: relative;
+}
+
+.hero-sect .hero-sect-one h1 span {
+    font-weight: lighter;
+}
+
+.hero-sect .hero-sect-one p {
+    font-size: 18px;
+    letter-spacing: 0.01em;
+    font-family: "Questrial", sans-serif;
+}
+
+.hero-sect .hero-sect-one .downBtn {
+    background-color: #170df2;
+    border: 2px solid #ffffff;
+    border-radius: 20px;
+    color: white;
+    width: 214px;
+    height: 52px;
+    font-size: 16px;
+    font-weight: 700;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-sect .hero-sect-one .downBtn:hover i {
+    font-size: 22px;
+    transition: all 0.2s ease, visibility 0s;
+}
+
+.hero-sect .hero-sect-one .downBtn:hover {
+    transition: all 0.2s ease, visibility 0s;
+    background: #FC4E1A;
+}
+
+.hero-sect .hero-sect-one .downBtn i {
+    color: #fdd80d;
+    font-size: 25px;
+}
+
+
+/* hero section from end here */
+
+
+/* download link today section start from here */
+
+.down-link {
+    background-color: rgb(255, 243, 255);
+}
+
+.down-link .down-link-heding h2 {
+    font-size: 56px;
+    text-align: center;
+    font-weight: lighter;
+    font-family: "Questrial", sans-serif;
+}
+
+.down-link .down-link-heding h2 .linkh2 {
+    font-family: syne, sans-serif;
+    font-weight: bold;
+}
+
+.down-link .down-link-heding p {
+    text-align: center;
+    width: 668px;
+    margin: 0 auto;
+    font-size: 18px;
+    font-family: "Questrial", sans-serif;
+    line-height: 1.8em;
+}
+
+.down-link .main-card {
+    text-align: center;
+}
+
+.down-link .main-card img {
+    width: 80%;
+    border-radius: 0px 0px 140px 140px;
+}
+
+.down-link .main-card .inner-card p {
+    width: 100%;
+    font-size: 16px;
+    line-height: 1.8em;
+}
+
+.down-link .main-card .inner-card h3 {
+    font-size: 22px;
+    font-weight: bold;
+    font-family: syne, sans-serif;
+    color: black;
+    padding: 20px 0;
+}
+
+.footer p {
+    margin-top: 20px;
+    padding: 10px 70px;
+    font-size: 16px;
+    line-height: normal;
+    font-family: "Questrial", sans-serif;
+}
+
+
+/* download link today section end from here */
+
+
+/* Get Support section css start from here */
+
+.support .innersupport h1 {
+    font-size: 56px;
+    font-weight: bold;
+    color: rgb(23, 13, 242);
+    font-family: syne, sans-serif;
+}
+
+.support .innersupport p {
+    font-size: 18px;
+    line-height: 1.8em;
+    font-family: "Questrial", sans-serif;
+    color: rgb(0, 0, 0);
+}
+
+.support .row {
+    padding-left: 160px;
+}
+
+.support .secdsupport h2 {
+    font-size: 30px;
+    color: rgb(23, 13, 242);
+    font-family: syne, sans-serif;
+    font-weight: bold;
+}
+
+.support .secdsupport p {
+    font-size: 16px;
+    line-height: 1.8em;
+    font-family: "Questrial", sans-serif;
+    color: rgb(0, 0, 0);
+}
+
+.support .secdsupport ul li {
+    font-size: 18px;
+    font-family: "Questrial", sans-serif;
+    color: rgb(0, 0, 0);
+}
+
+.support .secdsupport .span {
+    font-size: 18px !important;
+}
+
+.support .support-para {
+    font-size: 18px !important;
+    line-height: 1.8em;
+}
+
+.support .hr {
+    width: 110%;
+    height: 1px;
+    background-color: #170df2;
+    color: #170df2;
+}
+
+.scrollicon {
+    display: none;
+    position: fixed !important;
+    bottom: 100px;
+    right: 20px;
+    background-color: white !important;
+    padding: 4px 8px !important;
+}
+
+.scrollicon i {
+    font-size: 18px;
+}
+
+
+/* Get Support section css end from here */
+
+
+/* Media Queries STarts Here */
+
+@media screen and (max-width: 1199px) {
+    .hero-sect .secd-col {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 991px) {
+    .navbar {
+        padding: 0px 18px !important;
+    }
+    .support .row {
+        padding-left: 20px;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+    .hero-sect .secd-col .rect {
+        right: -59px;
+        width: 303px;
+        height: 100px;
+    }
+    .hero-sect .secd-col .star {
+        right: 7px;
+        top: 6px;
+        width: 120px;
+        height: 120px;
+    }
+    .hero-sect .secd-col .radii {
+        left: 12px;
+        height: 188px;
+        width: 188px;
+    }
+    .hero-sect .secd-col .circle {
+        left: 90px;
+        top: -25px;
+        width: 150px;
+        height: 150px;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .smallMainNav {
+        width: 75vw;
+    }
+    .hero-sect .secd-col {
+        width: 545px;
+    }
+    .hero-sect .secd-col .rect,
+    .hero-sect .secd-col .circle {
+        display: none;
+    }
+    .hero-sect .secd-col .star {
+        width: 140px;
+        right: 47px;
+        top: -40px;
+        height: 140px;
+    }
+    .hero-sect .secd-col .radii {
+        left: 0px;
+        bottom: -144px;
+        height: 210px;
+        transform: rotate(0);
+    }
+}
+
+@media screen and (max-width: 575px) {
+    .hero-sect .secd-col {
+        width: 100%;
+    }
+    .hero-sect .secd-col .star {
+        right: 14%;
+        top: -15px;
+        width: 98px;
+        height: 98px;
+    }
+    .hero-sect .secd-col .radii {
+        left: -2px;
+        bottom: -60px;
+        width: 113px;
+        height: 114px;
+        transform: rotate(0);
+    }
+    .hero-sect .hero-sect-one h1 {
+        font-size: 25px;
+        text-align: center;
+    }
+    .down-link .down-link-heding p {
+        width: 100%;
+    }
+    .hero-sect .hero-sect-one .downBtn {
+        margin: 0 auto;
+    }
+    .hero-sect .row {
+        padding-bottom: 60px;
+    }
+    .hero-sect .hero-sect-one p {
+        font-size: 16px;
+    }
+    .down-link .down-link-heding h2 {
+        font-size: 30px;
+    }
+    .down-link .down-link-heding p {
+        font-size: 16px;
+    }
+    .down-link .main-card img {
+        width: 100px;
+    }
+    .footer p {
+        font-size: 13px;
+        text-align: center;
+        padding: 0;
+    }
+    .navbar .navbar-brand {
+        font-size: 23px;
+    }
+    .navbar {
+        padding: 0px 5px !important;
+    }
+    .support .innersupport h1 {
+        font-size: 28px;
+    }
+    .support .innersupport p {
+        font-size: 16px;
+    }
+    .support .secdsupport h2 {
+        font-size: 22px;
+    }
+    .support .hr {
+        width: 100%;
+    }
+    .hero-sect {
+        margin-top: 60px;
+    }
+    .navbar {
+        z-index: 111;
+        position: fixed !important;
+        top: 0px;
+        background-color: white;
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .hero-sect .secd-col .star {
+        right: 10%;
+        top: -21px;
+    }
+}
+
+.displayblock {
+    display: block !important;
+}
